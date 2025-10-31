@@ -93,7 +93,7 @@ export default function DarkVeil({
         });
 
     const gl = renderer.gl;
-    gl.clearColor(0.0, 0.0, 0.0, 0.0);
+    gl.clearColor(1.0, 1.0, 1.0, 1.0);
         const geometry = new Triangle(gl);
 
         const program = new Program(gl, {
@@ -132,6 +132,7 @@ export default function DarkVeil({
             program.uniforms.uScan.value = scanlineIntensity;
             program.uniforms.uScanFreq.value = scanlineFrequency;
             program.uniforms.uWarp.value = warpAmount;
+            gl.clear(gl.COLOR_BUFFER_BIT);
             renderer.render({ scene: mesh });
             frame = requestAnimationFrame(loop);
         };

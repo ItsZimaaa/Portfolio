@@ -3,10 +3,12 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background: #ffffff;
+  color: #111827;
 }
 
 :root {
-  --bg: #232323;
+  --bg: #ffffff;
   --button: #ff451a;
   --buttonHover: #ffa202;
 
