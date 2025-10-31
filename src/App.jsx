@@ -16,9 +16,9 @@ export default function App() {
     <main>
       <div className="">
 
-        <div className="absolute inset-0 -z-10 w-full h-full">
+        {/* <div className="absolute inset-0 -z-10 w-full h-full">
           <DarkVeil />
-        </div>
+        </div> */}
 
         <div className="relative z-10 text-center">
           <BrowserRouter>

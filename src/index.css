@@ -7,15 +7,26 @@ body {
 
 :root {
   --bg: #232323;
-  --button: #757575;
-  --mint: #40ffaa;
+  --button: #ff451a;
+  --buttonHover: #ffa202;
+
+  --button2: white;
+  --buttonHover2: var(--bg);
 }
 
 .side {
-  @apply px-10
+  @apply px-30
 }
 
 .button {
-  @apply bg-(--bg) hover:bg-(--button) text-white px-4 py-2 rounded-3xl
+  @apply border-2 bg-(--button) hover:bg-(--buttonHover) text-white px-4 py-2 rounded-3xl
 }
 
+.button2 {
+  @apply border-2 border-(--bg) bg-(--button2) hover:bg-(--buttonHover2) text-(--bg) hover:text-white px-4 py-2 rounded-3xl
+}
+
+a.active {
+  color: #ff451a;
+  font-weight: 600;
+}

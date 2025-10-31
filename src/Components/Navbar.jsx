@@ -4,7 +4,7 @@ import logo from "../assets/Logo.svg"
 export default function Navbar() {
   return (
     <nav className="">
-      <div className="bg-white rounded-3xl flex justify-between items-center px-8 py-2 mt-4 text-black">
+      <div className="bg-(--bg) text-white rounded-3xl flex justify-between items-center px-8 py-2 mt-4 text-black">
 
         <ul className="flex items-center gap-8">
           <li><NavLink to={"/"}>Home</NavLink></li>
