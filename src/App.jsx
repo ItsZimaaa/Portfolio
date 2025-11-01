@@ -16,7 +16,7 @@ export default function App() {
     <main>
       <div className="">
 
-        {/* <div className="absolute inset-0 -z-10 w-full h-full">
+        {/* <div className="absolute inset-0 -z-10 w-full h-[2000px]">
           <DarkVeil />
         </div> */}
 

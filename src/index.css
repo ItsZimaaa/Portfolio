@@ -19,14 +19,14 @@ body {
 }
 
 .button {
-  @apply border-2 bg-(--button) hover:bg-(--buttonHover) text-white px-4 py-2 rounded-3xl
+  @apply bg-[#ff451a] text-white rounded-full font-semibold hover:bg-[#ffa202] transition-all
 }
 
 .button2 {
-  @apply border-2 border-(--bg) bg-(--button2) hover:bg-(--buttonHover2) text-(--bg) hover:text-white px-4 py-2 rounded-3xl
+  @apply border border-gray-300 rounded-full font-semibold text-gray-700 hover:bg-gray-100 transition-all
 }
 
 a.active {
-  color: #ff451a;
+  color: var(--bg);
   font-weight: 600;
 }

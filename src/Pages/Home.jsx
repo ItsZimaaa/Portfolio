@@ -5,13 +5,13 @@ import { FaGithub, FaLinkedin, FaDribbble } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <section className="relative overflow-hidden mt-4 bg-white/80 backdrop-blur-xl rounded-3xl p-8 md:p-16 flex flex-col md:flex-row justify-between items-center shadow-2xl">
+    <section className="relative overflow-hidden mt-4 bg-white/80 backdrop-blur-xl rounded-3xl p-8 md:p-16 flex flex-col md:flex-row justify-between items-center">
 
       <div className="absolute -top-20 -left-20 w-72 h-72 bg-[#ff451a]/20 rounded-full blur-[120px] animate-pulse -z-10"></div>
       <div className="absolute bottom-0 right-0 w-80 h-80 bg-[#ffa202]/20 rounded-full blur-[140px] animate-[float_6s_ease-in-out_infinite] -z-10"></div>
 
       <motion.div
-        initial={{ opacity: 0, y: 40 }}
+        initial={{ opacity: 0, y: 80 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
         className="md:w-[45%] space-y-6 z-10"
@@ -48,22 +48,22 @@ export default function Home() {
         <div className="flex gap-4 mt-6">
           <motion.button
             whileHover={{ scale: 1.05, boxShadow: "0px 0px 15px #ff7a1a" }}
-            className="px-6 py-3 bg-[#ff451a] text-white rounded-full font-semibold hover:bg-[#ffa202] transition-all"
+            className="px-6 py-3 button"
           >
             View My Work
           </motion.button>
           <motion.button
             whileHover={{ scale: 1.05, boxShadow: "0px 0px 10px rgba(0,0,0,0.2)" }}
-            className="px-6 py-3 border border-gray-300 rounded-full font-semibold text-gray-700 hover:bg-gray-100 transition-all"
+            className="px-6 py-3 button2"
           >
             Contact Me
           </motion.button>
         </div>
 
         <div className="flex gap-5 text-2xl text-gray-500 mt-6">
-          <a href="#" className="hover:text-black transition"><FaGithub /></a>
-          <a href="#" className="hover:text-blue-600 transition"><FaLinkedin /></a>
-          <a href="#" className="hover:text-pink-500 transition"><FaDribbble /></a>
+          <a className="hover:text-black transition"><FaGithub /></a>
+          <a className="hover:text-blue-600 transition"><FaLinkedin /></a>
+          <a className="hover:text-pink-500 transition"><FaDribbble /></a>
         </div>
 
         <div className="flex gap-10 mt-10">
@@ -83,8 +83,8 @@ export default function Home() {
       </motion.div>
 
       <motion.div
-        initial={{ opacity: 0, scale: 0.95 }}
-        animate={{ opacity: 1, scale: 1 }}
+        initial={{ opacity: 0, y: 80 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="md:w-[45%] mt-10 md:mt-0"
       >
